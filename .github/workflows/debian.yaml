@@ -1,0 +1,105 @@
+name: Debian
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+
+jobs:
+  sbuild:
+    env:
+      DISTRO: jammy
+      ROS_DISTRO: rolling
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+
+      - name: Cache ccache
+        uses: pat-s/always-upload-cache@v3
+        with:
+          path: /home/runner/.cache/ccache
+          key: ccache-rolling-ci-${{ github.sha }}-${{ github.run_id }}
+          restore-keys: |
+            ccache-rolling-ci-${{ github.sha }}
+            ccache-rolling-ci
+
+      - name: Install dependencies
+        run: |
+          sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
+            -o /usr/share/keyrings/ros-archive-keyring.gpg
+          echo "deb [signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo "$UBUNTU_CODENAME") main" \
+            | sudo tee /etc/apt/sources.list.d/ros2.list
+          sudo apt update
+          sudo apt install -y debian-archive-keyring python3-colcon-common-extensions python3-bloom python3-rosdep ccache
+
+          sudo rosdep init
+          rosdep update
+
+          # use newest versions of mmdebstrap and sbuild
+          echo "deb [signed-by=/usr/share/keyrings/debian-archive-keyring.gpg] http://deb.debian.org/debian unstable main" \
+            | sudo tee /etc/apt/sources.list.d/debian.list
+          sudo apt update
+          sudo apt install -y sbuild mmdebstrap
+
+          # workaround https://gitlab.mister-muffin.de/josch/mmdebstrap/commit/374ae3dc99e5d8a5a176939c3846e790e890a0e7
+          sudo sed -i 's/my $groupname = getgrgid $REAL_GROUP_ID;/my $groupname = $username;/' /usr/bin/mmdebstrap
+
+      - name: Setup build environment
+        run: |
+          mkdir -p ~/.cache/sbuild
+          mmdebstrap --variant=buildd --include=apt,ccache --components=main,universe $DISTRO ~/.cache/sbuild/$DISTRO-amd64.tar
+
+          ccache --zero-stats --max-size=10.0G
+          chmod a+rwX ~
+          chmod -R a+rwX ~/.cache/ccache
+
+          cat << "EOF" > ~/.sbuildrc
+          $build_environment = { 'CCACHE_DIR' => '/build/ccache' };
+          $path = '/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games';
+          $unshare_bind_mounts = [ { directory => '/home/runner/.cache/ccache', mountpoint => '/build/ccache' } ];
+          EOF
+
+      - name: Run sbuild
+        run: |
+          TOTAL="$(colcon list -tp | wc -l)"
+          COUNT=1
+          mkdir /home/runner/apt_repo
+          for PKG_PATH in $(colcon list -tp); do
+            [ $TOTAL -ne 1 ] && echo "::group::Building $COUNT/$TOTAL: $PKG_PATH"
+            (
+            cd "$PKG_PATH"
+            # debian-inc=2 in case there are packages published from the build farm already
+            bloom-generate rosdebian --os-version=$DISTRO --ros-distro=$ROS_DISTRO --debian-inc=2
+            # https://github.com/ros-infrastructure/bloom/pull/643
+            echo 11 > debian/compat
+
+            # dpkg-source-opts: no need for upstream.tar.gz
+            sbuild --chroot-mode=unshare --verbose --no-clean-source --no-run-lintian \
+              --dpkg-source-opts="-Zgzip -z1 --format=1.0 -sn" \
+              --build-dir=/home/runner/apt_repo --extra-package=/home/runner/apt_repo \
+              --extra-repository="deb http://packages.ros.org/ros2/ubuntu $DISTRO main" \
+              --extra-repository-key=/usr/share/keyrings/ros-archive-keyring.gpg
+            )
+            sudo chown -R runner:docker /home/runner/.cache/ccache/
+            chmod -R a+rwX ~/.cache/ccache
+            ccache -sv
+            COUNT=$((COUNT+1))
+            [ $TOTAL -ne 1 ] && echo "::endgroup::" || true
+          done
+
+      - name: Create apt repository
+        run: |
+          cd /home/runner/apt_repo
+          apt-ftparchive packages . > Packages
+          apt-ftparchive release . > Release
+          echo "deb [trusted=yes] https://raw.githubusercontent.com/$GITHUB_REPOSITORY/ubuntu/ ./" > README.md
+
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          # change branch for multiple apt repos
+          BRANCH: ubuntu
+          FOLDER: /home/runner/apt_repo
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-rolling-moveit-ros-warehouse
+Binary: ros-rolling-moveit-ros-warehouse
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-2jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-rolling-moveit-ros-warehouse - Components of MoveIt connecting to MongoDB
+Changes:
+ ros-rolling-moveit-ros-warehouse (2.6.0-2jammy) jammy; urgency=high
+ .
+   * Restructure moveit warehouse package (#1551 <https://github.com/ros-planning/moveit2/issues/1551>)
+     * Restructure warhouse package to match other packages, remove manifest.xml
+     * Cleanup CMakeLists.txt file
+     * Remove dublicate install command
+     * Export ${PROJECT_NAME}Targets
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Remove __has_include statements (#1481 <https://github.com/ros-planning/moveit2/issues/1481>)
+   * Contributors: Robert Haschke, Sebastian Jahr, Vatan Aksoy Tezer
+Checksums-Sha1:
+ a0d7fd777c12d4d88445aa5b3153341d5132c50d 18388350 ros-rolling-moveit-ros-warehouse-dbgsym_2.6.0-2jammy_amd64.ddeb
+ 2cf77fd1500d1d919011ff2ad55753dfaef99319 27746 ros-rolling-moveit-ros-warehouse_2.6.0-2jammy_amd64.buildinfo
+ 3640750a4fce9d4bfb660183ac56a83df0f030cc 423806 ros-rolling-moveit-ros-warehouse_2.6.0-2jammy_amd64.deb
+Checksums-Sha256:
+ abbb770bfbf06dcca3b32352c7cbf16dac1b7116e5dd116eda2615c4a21f107d 18388350 ros-rolling-moveit-ros-warehouse-dbgsym_2.6.0-2jammy_amd64.ddeb
+ bdd9f3c8fc8e5bafa72089a8015100dd79c935289a34e678ca7caaf4f9efac47 27746 ros-rolling-moveit-ros-warehouse_2.6.0-2jammy_amd64.buildinfo
+ 6714b86800e807b42903b32b8e68553ac1f8c4c1e0daebe67d415fb59bfc5e0c 423806 ros-rolling-moveit-ros-warehouse_2.6.0-2jammy_amd64.deb
+Files:
+ 236061608b5082c159b80163c144f83e 18388350 debug optional ros-rolling-moveit-ros-warehouse-dbgsym_2.6.0-2jammy_amd64.ddeb
+ 5284b72e4b701d6a440d521918496498 27746 misc optional ros-rolling-moveit-ros-warehouse_2.6.0-2jammy_amd64.buildinfo
+ 1017d1bf2474633542ff592e83eefa34 423806 misc optional ros-rolling-moveit-ros-warehouse_2.6.0-2jammy_amd64.deb

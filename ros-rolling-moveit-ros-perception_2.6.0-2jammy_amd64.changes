@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Thu, 10 Nov 2022 00:00:00 -0000
+Source: ros-rolling-moveit-ros-perception
+Binary: ros-rolling-moveit-ros-perception
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.6.0-2jammy
+Distribution: jammy
+Urgency: high
+Maintainer: Henning Kayser <henningkayser@picknik.ai>
+Changed-By: Henning Kayser <henningkayser@picknik.ai>
+Description:
+ ros-rolling-moveit-ros-perception - Components of MoveIt connecting to perception
+Changes:
+ ros-rolling-moveit-ros-perception (2.6.0-2jammy) jammy; urgency=high
+ .
+   * Merge PR #1553 <https://github.com/ros-planning/moveit2/issues/1553>: Improve cmake files
+   * Use standard exported targets: export_${PROJECT_NAME} -> ${PROJECT_NAME}Targets
+   * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
+   * Remove __has_include statements (#1481 <https://github.com/ros-planning/moveit2/issues/1481>)
+   * Contributors: Robert Haschke, Sebastian Jahr, Vatan Aksoy Tezer
+Checksums-Sha1:
+ ea4221b41377e5c2c8e5ac42126b36a320549311 10026626 ros-rolling-moveit-ros-perception-dbgsym_2.6.0-2jammy_amd64.ddeb
+ 78829f3c57b1e8169c62b2695e3716c5cc2fb2fa 38928 ros-rolling-moveit-ros-perception_2.6.0-2jammy_amd64.buildinfo
+ d3c388134221c581089c59abc5e8e3fbe2096952 363868 ros-rolling-moveit-ros-perception_2.6.0-2jammy_amd64.deb
+Checksums-Sha256:
+ f0d238a4da31bea7a7f6e80903c004c5b18967cb6e6062bfd89f463726ff70f7 10026626 ros-rolling-moveit-ros-perception-dbgsym_2.6.0-2jammy_amd64.ddeb
+ 766c7b87d7b43afd3bd02fa56bcbe4c9bea5ba31b8773386444a78014182c8f5 38928 ros-rolling-moveit-ros-perception_2.6.0-2jammy_amd64.buildinfo
+ 48b1d8eadf4ab851daa5623b93a8aa767561a3dc51b162786f20e34fae08ba04 363868 ros-rolling-moveit-ros-perception_2.6.0-2jammy_amd64.deb
+Files:
+ 9cfd51eac7de72c1a3fdf9b4b5825c80 10026626 debug optional ros-rolling-moveit-ros-perception-dbgsym_2.6.0-2jammy_amd64.ddeb
+ 53aea3183bf83b1817951e1e3b9e85d0 38928 misc optional ros-rolling-moveit-ros-perception_2.6.0-2jammy_amd64.buildinfo
+ ffdffd132cae80a3e693d656c1f06f67 363868 misc optional ros-rolling-moveit-ros-perception_2.6.0-2jammy_amd64.deb

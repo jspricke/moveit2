@@ -17,14 +17,14 @@ Changes:
    * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
    * Contributors: Sebastian Jahr
 Checksums-Sha1:
- a816ca3a02e4b16652656ac9261a183080a45d89 7319450 ros-rolling-moveit-setup-assistant-dbgsym_2.6.0-2jammy_amd64.ddeb
- 2b3199ee3650c5b5fe04e3820a96a037b52f4842 34209 ros-rolling-moveit-setup-assistant_2.6.0-2jammy_amd64.buildinfo
- 0f5b8c42a8c3dfd790863d7ca06d2d2d337d0738 291632 ros-rolling-moveit-setup-assistant_2.6.0-2jammy_amd64.deb
+ 1753aa7d368db0676b30067b3b3845bae7fa6a40 7317502 ros-rolling-moveit-setup-assistant-dbgsym_2.6.0-2jammy_amd64.ddeb
+ b04a3d98901b1def9a018058c4d1854fe5d8a093 34049 ros-rolling-moveit-setup-assistant_2.6.0-2jammy_amd64.buildinfo
+ d54565d4efb0354da9b8fafd9681ed06ddbdad2c 291636 ros-rolling-moveit-setup-assistant_2.6.0-2jammy_amd64.deb
 Checksums-Sha256:
- 1dd711b770fe42d9d10d53c2e5c1608586db1d1c0297f5534f3ade86f94724ae 7319450 ros-rolling-moveit-setup-assistant-dbgsym_2.6.0-2jammy_amd64.ddeb
- c3966ccd41f5383d39e9452e9a27863dd7f4cb6fbb18c4fadaa6eec96e318e1f 34209 ros-rolling-moveit-setup-assistant_2.6.0-2jammy_amd64.buildinfo
- 2b25dc42add022fa89f1db1b81b9a22673c5fbf69e91f0ac82c6b1e4d5b7f8ad 291632 ros-rolling-moveit-setup-assistant_2.6.0-2jammy_amd64.deb
+ d3b9116a69b58f9f5ee02b81ae73150e00ff0713aaf7bb211b8a110daa300139 7317502 ros-rolling-moveit-setup-assistant-dbgsym_2.6.0-2jammy_amd64.ddeb
+ 4d238a025f6d2326b17574e53e7e6b014848a9e43df408c60458094d8f5a0da4 34049 ros-rolling-moveit-setup-assistant_2.6.0-2jammy_amd64.buildinfo
+ 0abb502b1b6f7f71e97abb57d8519ef80b1e7b7afe3f2b661282c02d9e4ab61f 291636 ros-rolling-moveit-setup-assistant_2.6.0-2jammy_amd64.deb
 Files:
- 9e98287b58ea16782d57298cbd008723 7319450 debug optional ros-rolling-moveit-setup-assistant-dbgsym_2.6.0-2jammy_amd64.ddeb
- c04dae6e10b27860e9a541289940e6ed 34209 misc optional ros-rolling-moveit-setup-assistant_2.6.0-2jammy_amd64.buildinfo
- 37554a144ae7be9d25a3ab94cba7c37f 291632 misc optional ros-rolling-moveit-setup-assistant_2.6.0-2jammy_amd64.deb
+ f5ba6a62d14bbeda1cf9839e3f8d7041 7317502 debug optional ros-rolling-moveit-setup-assistant-dbgsym_2.6.0-2jammy_amd64.ddeb
+ 64474dd2fb6a2de53ac4b17c516c2e74 34049 misc optional ros-rolling-moveit-setup-assistant_2.6.0-2jammy_amd64.buildinfo
+ 80960407807687d791dd34a7546aa1a4 291636 misc optional ros-rolling-moveit-setup-assistant_2.6.0-2jammy_amd64.deb

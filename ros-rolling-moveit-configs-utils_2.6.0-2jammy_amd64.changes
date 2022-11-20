@@ -20,11 +20,11 @@ Changes:
    * Typo fix (#1518 <https://github.com/ros-planning/moveit2/issues/1518>)
    * Contributors: Abishalini Sivaraman, Stephanie Eng
 Checksums-Sha1:
- 0e582862f83a07361aab3226744de798a43e1f3b 9793 ros-rolling-moveit-configs-utils_2.6.0-2jammy_amd64.buildinfo
+ 1c656b5e954a0b06aaced85b1f6ae0b8cc235e8b 9793 ros-rolling-moveit-configs-utils_2.6.0-2jammy_amd64.buildinfo
  4717fe6219ab53d49d5cf45059bdc83679b33382 20274 ros-rolling-moveit-configs-utils_2.6.0-2jammy_amd64.deb
 Checksums-Sha256:
- ebc5f1c6d866078c5e05a08b08739ebc6f133cd25589b382434af6f0799a0364 9793 ros-rolling-moveit-configs-utils_2.6.0-2jammy_amd64.buildinfo
+ 60ff07843f8b182bcf4c085f70ce7d5d3a92efe54c504488a2bd4e1f5b99e540 9793 ros-rolling-moveit-configs-utils_2.6.0-2jammy_amd64.buildinfo
  639bca623f98aa443696c7c9956e03e29e102751a471b685984e065f3c444819 20274 ros-rolling-moveit-configs-utils_2.6.0-2jammy_amd64.deb
 Files:
- 366bc81214e6ca01e9aded764149e3ae 9793 misc optional ros-rolling-moveit-configs-utils_2.6.0-2jammy_amd64.buildinfo
+ 2cd98ef94f45d3454db1ff8e9b5668cc 9793 misc optional ros-rolling-moveit-configs-utils_2.6.0-2jammy_amd64.buildinfo
  7540840325d341a80785aa7d2c06c46a 20274 misc optional ros-rolling-moveit-configs-utils_2.6.0-2jammy_amd64.deb

@@ -21,14 +21,14 @@ Changes:
    * Remove __has_include statements (#1481 <https://github.com/ros-planning/moveit2/issues/1481>)
    * Contributors: Robert Haschke, Sebastian Castro, Sebastian Jahr, Vatan Aksoy Tezer
 Checksums-Sha1:
- e9c5636021794e3181a3ca8972e40c3941f5d925 6773172 ros-rolling-moveit-ros-robot-interaction-dbgsym_2.6.0-2jammy_amd64.ddeb
- 7178f9dcc2f7a9505c7bcd065dbdb0e036c87191 27837 ros-rolling-moveit-ros-robot-interaction_2.6.0-2jammy_amd64.buildinfo
- c711e4373061cbb1eb435ebaf75d2a1bca8e0d55 174562 ros-rolling-moveit-ros-robot-interaction_2.6.0-2jammy_amd64.deb
+ 8722f0a5c7a2cbc373e1da760cb7c2098edc1a61 6774304 ros-rolling-moveit-ros-robot-interaction-dbgsym_2.6.0-2jammy_amd64.ddeb
+ 36be3b061d705ab4586fb6d3e2c4ca0cb5e7e7e0 27805 ros-rolling-moveit-ros-robot-interaction_2.6.0-2jammy_amd64.buildinfo
+ 208ab086a5964928a00a9b644e38819d24d6e1d6 174560 ros-rolling-moveit-ros-robot-interaction_2.6.0-2jammy_amd64.deb
 Checksums-Sha256:
- 9bd5f73452394bb3f2d473c236e586953d16e7ea27bdde07302dfaa8ec07936e 6773172 ros-rolling-moveit-ros-robot-interaction-dbgsym_2.6.0-2jammy_amd64.ddeb
- d6cae3a903bf83e5f851d4f16105de9c7156cb7b15d091ed32d87187250da060 27837 ros-rolling-moveit-ros-robot-interaction_2.6.0-2jammy_amd64.buildinfo
- 3dde32994bc21ce2491daa6281550f83d0ad98265502b8d52e5a77ac7acbf420 174562 ros-rolling-moveit-ros-robot-interaction_2.6.0-2jammy_amd64.deb
+ dc7d66ad47e147d4868931219f809b501c94aa77416423e70c474cc7fb032407 6774304 ros-rolling-moveit-ros-robot-interaction-dbgsym_2.6.0-2jammy_amd64.ddeb
+ 287633021d7ed254337ed4376eb9f4ab2d9dab4906480229a54f12feb5b38c38 27805 ros-rolling-moveit-ros-robot-interaction_2.6.0-2jammy_amd64.buildinfo
+ d783000a4c4290655d17e60e96d0c416253dc9cf54afe19d586e744a8655d3a3 174560 ros-rolling-moveit-ros-robot-interaction_2.6.0-2jammy_amd64.deb
 Files:
- 40a8c4ad4e12c33a3712bfb9e54cc24f 6773172 debug optional ros-rolling-moveit-ros-robot-interaction-dbgsym_2.6.0-2jammy_amd64.ddeb
- 25055b5653ecde451f093a5be6689c3d 27837 misc optional ros-rolling-moveit-ros-robot-interaction_2.6.0-2jammy_amd64.buildinfo
- cafe2177dc0f2df7a833951b1852fbe8 174562 misc optional ros-rolling-moveit-ros-robot-interaction_2.6.0-2jammy_amd64.deb
+ 6f222d203aa3694508f5bd47e8730fc0 6774304 debug optional ros-rolling-moveit-ros-robot-interaction-dbgsym_2.6.0-2jammy_amd64.ddeb
+ e9270298a50fd6f9b535bd73927a7fc6 27805 misc optional ros-rolling-moveit-ros-robot-interaction_2.6.0-2jammy_amd64.buildinfo
+ e455dc366cba3e30d99208307245d96c 174560 misc optional ros-rolling-moveit-ros-robot-interaction_2.6.0-2jammy_amd64.deb

@@ -23,14 +23,14 @@ Changes:
    * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
    * Contributors: Robert Haschke, Sebastian Jahr
 Checksums-Sha1:
- 4a6cca00c92709db94e1058b0a69285d89f35990 19774970 ros-rolling-moveit-setup-srdf-plugins-dbgsym_2.6.0-2jammy_amd64.ddeb
- 1e897ac703238cb44b3e3f29b07643f609c2bb89 32976 ros-rolling-moveit-setup-srdf-plugins_2.6.0-2jammy_amd64.buildinfo
- 53a25d32894cb90b032c9d4e74b7b538912bf20c 310830 ros-rolling-moveit-setup-srdf-plugins_2.6.0-2jammy_amd64.deb
+ f577812bd0afd7f0d06605a5a1c5701d89d85381 19775892 ros-rolling-moveit-setup-srdf-plugins-dbgsym_2.6.0-2jammy_amd64.ddeb
+ b3f835a0fb079b13d38cb6c87ea4fe79a6164b60 32816 ros-rolling-moveit-setup-srdf-plugins_2.6.0-2jammy_amd64.buildinfo
+ 69147f0b9f12b8cf2cb417463e54faaaf4668698 310830 ros-rolling-moveit-setup-srdf-plugins_2.6.0-2jammy_amd64.deb
 Checksums-Sha256:
- 85f6871a6fa977a3c0ece9e95b9cc7569ec765d0d64652b07153ba828172d246 19774970 ros-rolling-moveit-setup-srdf-plugins-dbgsym_2.6.0-2jammy_amd64.ddeb
- 94c01f75adfc5219930e4c1ba278383f3d389f379e66bd8f3155498feff3d5f3 32976 ros-rolling-moveit-setup-srdf-plugins_2.6.0-2jammy_amd64.buildinfo
- 4b36c9cab2bfea0e89a0820088d6e35e30f8421d4fc01510bb70c154d3d15068 310830 ros-rolling-moveit-setup-srdf-plugins_2.6.0-2jammy_amd64.deb
+ dbd7f8633f40a0c9e3540f327363e350c3631105653db8f8e8ca13f70e75b96d 19775892 ros-rolling-moveit-setup-srdf-plugins-dbgsym_2.6.0-2jammy_amd64.ddeb
+ fb327097b292b0e76f0ed0be2683face45d7814319459c1767fa666db47ca119 32816 ros-rolling-moveit-setup-srdf-plugins_2.6.0-2jammy_amd64.buildinfo
+ 16d4b2389d3bf1798a93757cf0ee62c014b1ef442391be2042d5ac2b54b541b9 310830 ros-rolling-moveit-setup-srdf-plugins_2.6.0-2jammy_amd64.deb
 Files:
- fc6749a7fc3d51141ecf5fa034dddad1 19774970 debug optional ros-rolling-moveit-setup-srdf-plugins-dbgsym_2.6.0-2jammy_amd64.ddeb
- 86118191d3aff7b96d3414af9019350e 32976 misc optional ros-rolling-moveit-setup-srdf-plugins_2.6.0-2jammy_amd64.buildinfo
- fa4ddb34d9e4173d399cc146484ed6e9 310830 misc optional ros-rolling-moveit-setup-srdf-plugins_2.6.0-2jammy_amd64.deb
+ 58c534e4329810a36ab7a66b1558f884 19775892 debug optional ros-rolling-moveit-setup-srdf-plugins-dbgsym_2.6.0-2jammy_amd64.ddeb
+ cf48cfe4a09e88b3b0865b4604dd4dfe 32816 misc optional ros-rolling-moveit-setup-srdf-plugins_2.6.0-2jammy_amd64.buildinfo
+ 464aa428262e73df6eb1c3395dd04498 310830 misc optional ros-rolling-moveit-setup-srdf-plugins_2.6.0-2jammy_amd64.deb

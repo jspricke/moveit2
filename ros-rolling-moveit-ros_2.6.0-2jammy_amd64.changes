@@ -17,11 +17,11 @@ Changes:
    * Improve CMake usage (#1550 <https://github.com/ros-planning/moveit2/issues/1550>)
    * Contributors: Sebastian Jahr
 Checksums-Sha1:
- 5b7b4b04c3bcac72991e6885a3b25f88bdc1619d 10699 ros-rolling-moveit-ros_2.6.0-2jammy_amd64.buildinfo
+ 7038f262c6de18f12bd26139f70dbbc35a6c112c 10699 ros-rolling-moveit-ros_2.6.0-2jammy_amd64.buildinfo
  6a4563a19e2dfd83cf5b4e04afe13ec01c599e6a 6830 ros-rolling-moveit-ros_2.6.0-2jammy_amd64.deb
 Checksums-Sha256:
- 77197c088dcad8bf5e2151ec51d3627a3ebf3a47269069115162f8972a940bf6 10699 ros-rolling-moveit-ros_2.6.0-2jammy_amd64.buildinfo
+ a9477f18d0ac019fba59653b21f9d30b92708c46eae9e7761269ccc01c202796 10699 ros-rolling-moveit-ros_2.6.0-2jammy_amd64.buildinfo
  eb1e8fbf82b15b8e9cc2ff268bec056123a127f2e0e572f4e2b1803b4d130437 6830 ros-rolling-moveit-ros_2.6.0-2jammy_amd64.deb
 Files:
- 966bb9001e2c39f029efdb5ddb113eb4 10699 misc optional ros-rolling-moveit-ros_2.6.0-2jammy_amd64.buildinfo
+ e19f74f51cdea5c14af548932016b617 10699 misc optional ros-rolling-moveit-ros_2.6.0-2jammy_amd64.buildinfo
  60a4351858af10c99858e208e6fee914 6830 misc optional ros-rolling-moveit-ros_2.6.0-2jammy_amd64.deb

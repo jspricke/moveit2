@@ -6,13 +6,6 @@ on:
     - cron:  '0 17 * * 6'
   workflow_dispatch:
   push:
-    branches:
-      - main
-  pull_request:
-    paths:
-      - .docker/**
-      - .github/workflows/docker.yaml
-      - moveit2.repos
 
 jobs:
   release:

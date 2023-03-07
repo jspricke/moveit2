@@ -11,7 +11,6 @@ RUN echo "deb http://packages.ros.org/ros2-testing/ubuntu $(lsb_release -cs) mai
 # Upgrade packages to ros-testing and clean apt-cache within one RUN command
 RUN apt-get update && \
     apt-get -y upgrade && \
-    apt-get list --installed && \
     apt-get -y dist-upgrade && \
     #
     # Clear apt-cache to reduce image size
